@@ -1,0 +1,136 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  color: lightgrey;
+}
+
+body {
+  background: #005C97; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #005C97 , #363795); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #005C97 , #363795); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Lato';
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+/********************* USER SELECTIONS *********************/
+#intro-container {
+  text-align: center;
+  position: relative;
+  height: 100%;
+}
+
+#intro-content {
+  position: relative;
+  top: 35%;
+  transform: translateY(-35%);
+}
+
+.settings-info {
+  text-align: center;
+  font-weight: 100;
+  font-size: 24px;
+}
+
+.welcome {
+  color: green;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 48px;
+  letter-spacing: 1.5px;
+}
+
+.input-field {
+  width: 200px;
+  border: none;
+  background: transparent;
+  text-align: center;
+  border-bottom: 1px solid lightgrey;
+}
+
+input[type="submit"]:focus {
+  outline: 0;
+}
+
+.input-field:focus {
+  outline: none;
+  border-bottom: 1px solid white;
+}
+
+.background-notification {
+  margin-top: 100px;
+}
+
+.background-input {
+  margin-top: 50px;
+}
+
+#continue {
+  text-align: center;
+  margin: 0 auto;
+  height: 50px;
+  width: 200px;
+  background: #191919;
+  border: 1px solid white;
+  border-top: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: 100;
+  display: block;
+}
+
+/********************* GRID & PALETTE *********************/
+#canvas-container {
+  margin-top: 100px;
+}
+
+.square {
+  border: 1px solid lightgrey;
+  float: right;
+}
+
+#palette-container {
+  top: 0;
+  left: 0 !important;
+  position: fixed;
+  display: none;
+  height: 60px;
+  padding-bottom: 100px;
+  background: lightgrey;
+  width: 100%;
+}
+
+.delete-feature {
+  background: black;
+  width: 60px;
+  float: left;
+  border-right: 1px solid lightgrey;
+}
+
+/* centers icons */
+.delete-feature img {
+  padding-left: 5px;
+}
+
+.color-selector {
+  float: left;
+}
+
+.color-selector p {
+  color: #191919;
+  margin: 0;
+  text-transform: uppercase;;
+  font-weight: 800;
+}
+
+#color-generator {
+  height: 55px;
+  width: 80px;
+  background: white;
+  margin-left: 15px;
+}
