@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pixel Art Maker!</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" media="screen" title="no title" charset="utf-8">
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <div class="animated zoomIn" id="intro-container">
+      <div id="intro-content">
+        <h1 class="settings-info welcome">Welcome to Pixation!</h1>
+        <h2 class="settings-info">Create your canvas by entering a number from 1 to 100 for both the width and height fields.</h2>
+        <h3 class="settings-info">height</h3>
+        <input class="input-field" type="text" name="height">
+        <h3 class="settings-info">width</h3>
+        <input class="input-field width-field" type="text" name="width">
+      </div>
+    </div>
+
+    <div id="canvas-container">
+
+    </div>
+
+    <div id="palette-container">
+      <div class="swatch color-selector">
+        <p>select a color:<input value="#006699" id="color-generator" type="color"></p>
+      </div>
+
+      <div class="swatch delete-feature">
+        <img id="erase" src="eraser.png"/>
+      </div>
+
+      <div class="swatch delete-feature">
+        <img id="canvas-icon" src="grid.png"/>
+      </div>
+
+      <div class="swatch delete-feature">
+        <img id="delete" src="delete.png"/>
+      </div>
+    </div>
+  </body>
+</html>
